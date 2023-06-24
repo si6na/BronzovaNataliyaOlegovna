@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" >
+
+<legend>Заполните анкету</legend>
+<fieldset>
+    <legend>Личные данные</legend>
+    <input type="text" name="Фамилия" pattern='[А-Яа-я]+[^\s]' id="Фамилия"  value="Фамилия" maxlength="25" required placeholder="это обязательное поле" autocomplete="off" AUTOFOCUS> <br>
+    <input type="text" name="Имя"  pattern='[А-Яа-я]+'  id="Имя" value="Имя" maxlength="20" placeholder="это обязательное поле" required> <br>
+    <input type="text" name="Отчество"  pattern='[А-Яа-я]+'  id="Отчество" value="Отчество" maxlength="24" required placeholder="это обязательное поле" > <br>
+
+
+<fieldset>
+<legend>Паспортные данные</legend>
+<input type="text" pattern="'^[A-Z]{2}'" maxlength="2">  <input type="text" min="7"  maxlength="7">  
+</fieldset>
+
+<fieldset> <legend>Дата Рождения</legend>
+<input type="text" name="Дата Рождения" id="Дата Рождения" pattern="[0-9]{4.}" maxlength="4"> <br>
+<select name="Месяц Рождения">
+    <option value="Январь">Январь</option>
+    <option value="Февраль">Февраль</option>
+    <option value="Март">Март</option>
+    <option value="Апрель">Апрель</option>
+    <option value="Май">Май</option>
+    <option value="Июнь">Июнь</option>
+    <option value="Июль">Июль</option>
+    <option value="Август">Август</option>
+    <option value="Сентябрь">Сентябрь</option>
+    <option value="Октябрь">Октябрь</option>
+    <option value="Ноябрь">Ноябрь</option>
+    <option value="Декабрь">Декабрь</option>
+    </select> <br>
+    <input type="number" min="1" max="31" step="1"> <br>
+</fieldset>
+
+
+    <span>Национальность</span>
+   <select name="Национальность" id="Национальность" placeholder="это обязательное поле" required autocomplete="off">
+    <option value="РБ">РБ</option>
+    <option value="РФ">РФ</option>
+    <option value="FR">FR</option>
+    <option value="GE">GE</option>
+   </select> <br>
+   <span> Адрес:</span> <br>
+   <textarea name="Adress" cols="15" rows="5"></textarea>
+
+</fieldset>
+
+<fieldset>
+<legend>Интересы</legend>
+
+<fieldset> <legend>Хобби</legend>
+    <input type="checkbox" name="Рыбалка"> <span>Рыбалка</span> <br>
+    <input type="checkbox" name="Астрономия"><span>Астрономия</span> <br>
+    <input type="checkbox" name="Дайвинг"><span>Дайвинг</span> <br>
+    <input type="checkbox" name="Марки"><span>Марки</span> <br>
+</fieldset>
+
+<fieldset> <legend>Домашние животные</legend>
+<select multiple size="12" name="Домашние животные" id="Домашние животные">
+    <optgroup label="Попугаи">
+        <option value="Волнистый">Волнистый</option>
+        <option value="Ара">АРА</option>
+        <option value="Неразлучник">Неразлучник</option>
+  </optgroup>
+  <optgroup label="Рыба">
+        <option value="Караси">Караси</option>
+        <option value="Окуни">Окуни</option>
+        <option value="Осетр">Осетр</option>
+    </optgroup>
+    <optgroup label="Птица">
+        <option value="Стая ворон">Стая ворон</option>
+        <option value="Аист">Аист</option>
+        <option value="Археоптерикс">Археоптерикс</option>
+    </optgroup>
+</select>
+</fieldset>
+</fieldset>
+
+<fieldset><legend>Данные для входа и восстановления пароля</legend>
+    
+    <INPUT TYPE="text" ID="login" NAME="login" value="Логин" pattern='[A-Za-z]+[^\s]{5,20}' maxlength="20" required placeholder="это обязательное поле"> <br>
+        <br>
+    <INPUT TYPE="password" ID="pass" NAME="password" placeholder="Пароль" pattern='[A-Za-z]+[^\s]{10,20}' maxlength="20" required placeholder="это обязательное поле"autocomplete="off"> <br>
+    </fieldset>
+     
+</fieldset>
+
+<fieldset><legend>Координаты</legend>
+    <input type="email" placeholder="введите адрес почты"> <br>
+    <input type="url" placeholder="введите адрес сайта"> <br>
+
+</fieldset>
+
+<fieldset><legend>Цифры</legend>
+    <input type="number" min="-2.5" max="2.5" step="0.1"> <br>
+    <input type="range" min="1" max="10"> <br>
+
+</fieldset>
+
+<fieldset><legend>Кнопки управления</legend>
+
+<input type="submit" value="отправить">
+<input type="reset" value="сбросить"> <br>
+
+<button type="button">
+    <b></b> <br>
+    <img src="email.jpg">
+    </button>
+</fieldset>
+
+
+    </form>
+</body>
+</html>
