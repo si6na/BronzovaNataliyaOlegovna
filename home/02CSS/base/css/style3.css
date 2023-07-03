@@ -1,0 +1,50 @@
+.alltext
+{
+    background-color: aquamarine;
+}
+
+.leftblock {
+    float: left;
+    width: 15em;
+    background-color: bisque;
+    color: black;
+}
+
+.rightblock
+{ margin-left: 15em;
+    margin-bottom: .2em;
+    background-color: cornsilk;
+    color: black;
+    padding: 0.1px;
+}
+
+.itsimage
+{    float: right;
+    position: relative;
+}
+
+.downblock
+{ margin-bottom: .2em;
+    margin-left: 15em;
+    background-color: rgb(247, 177, 133);
+    color: black;
+    
+}
+
+
+
+.footerblock
+{
+background-color: rgb(128, 124, 81);
+color: black;
+clear: both;
+
+}
+
+
+
+.cl
+{clear: both;}
+
+.page
+{white-space: pre-line;}
