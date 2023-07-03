@@ -1,0 +1,18 @@
+.text1{
+list-style-type: upper-roman;
+align-self: center;
+align-items: center;
+width: 350px;
+}
+.text2
+{list-style-type: lower-roman;
+width: 350px; 
+}  
+.text3
+{ background-color: black;
+    color: darkgreen;
+    width: 400px;
+    height: 77px;
+overflow: auto;
+}
+
