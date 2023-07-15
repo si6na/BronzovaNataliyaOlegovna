@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+.table{
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #599663;
+	border: 1px solid #dddddd;
+}
+.table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+.table tbody tr:nth-child(odd){
+	background: #fff;
+}
+.table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
+</style>
+
+<div id="table_data">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>пол</th>
+                <th>должность</th>
+                <th>дата рож.</th>
+                <th>Данные 01</th>
+                <th>Данные 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr>
+                <td>Петрова Илонна Петровна</td>
+                <td>Ж</td>
+                <td>секретарь</td>
+                <td>01.01.1989</td>
+                <td>98795</td>
+                <td>46523</td>
+            </tr>
+            <tr>
+                <td>Сидоров Илья Игоревич</td>
+                <td>М</td>
+                <td>бухгалтер</td>
+                <td>01.01.1989</td>
+                <td>98795</td>
+                <td>46523</td>
+            </tr>
+            <tr>
+                <td>Крупин Сергей Иванович</td>
+                <td>М</td>
+                <td>водитель 2</td>
+                <td>01.01.1963</td>
+                <td>74323434</td>
+                <td>9232379</td>
+            </tr>
+            <tr>
+                <td>Пупин Фёдор Фёдорович</td>
+                <td>М</td>
+                <td>водитель</td>
+                <td>01.01.1963</td>
+                <td>74323434</td>
+                <td>923123379</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <input type="button" class=" showHide" id="hideShowTable" value="Скрыть строки">
+    <a href="#table_data" class="showHide">  </a>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+
+  <script>
+$(document).ready(function ($){} 
+)
+  </script>
+  <script>
+$('.showHide').click(function(){
+		$('#table_data').toggle();
+		if ($('#table_data').is(':visible')){
+			$(this).val('Скрыть строки');
+			$(this).text('Скрыть строки');
+		}else {
+			$(this).val('Показать строки');
+			$(this).text('Показать строки');
+		}
+	});
+
+  </script>
+
+</body>
+</html>
